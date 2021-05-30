@@ -55,8 +55,57 @@ main{
 
 }
 
+
+#form h1{
+    font-size:2rem;
+    margin-bottom:2rem;
+}
+
+#form #email {
+    width: 30%;
+    height:3rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+
+}
+
+#form #submit{
+    width: 15%;
+    height: 3rem;
+    background: orange;
+    border-color: orange;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
 section{
     padding: 3rem 0;
+}
+
+#features{
+    background: yellow;
+}
+
+#features .groupfeatures{
+    background: blue;
+    display: flex;
+    align-items: center;
+}
+
+.groupfeatures i{
+    margin: 3rem;
+    padding: 2rem;
+    color: orange;
+}
+
+
+#features .features-content h1{
+    font-size: 2rem;
+
+}
+
+#features .features-content p{
+    font-size: 1.5rem;
 }
 
 #how-it-works{
