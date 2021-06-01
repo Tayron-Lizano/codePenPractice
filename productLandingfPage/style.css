@@ -48,7 +48,6 @@ li{
 }
 
 main{
-    width: 73%;
     margin:auto;
     margin-top: 11vh;
 }
@@ -56,7 +55,7 @@ main{
 #form {
     text-align: center;
     margin-bottom: 4rem;
-    margin-top: 1.5rem;
+    margin-top: 14vh;
 
 }
 
@@ -67,26 +66,39 @@ main{
 }
 
 #form #email {
-    width: 30%;
+    width: 29rem;
     height:3rem;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 1.2rem;
 
 }
 
 #form #submit{
-    width: 15%;
+    width: 16rem;
     height: 3rem;
-    background: orange;
+    background: #F1C43F;
     font-weight: 700;
     font-size: 1.6rem;
     border: none;
+    cursor:pointer;
+    border-radius:2px;
 }
+
+#form #submit:hover{
+   background: orange;
+   transition: background 0.9s;
+} 
+
 
 section{
-    padding: 3rem 0;
+    padding: 3rem 3rem;
 }
 
+
+#features .groupfeatures{
+   max-width:1000px;
+   margin: auto;
+}
 
 #features .groupfeatures{
     display: flex;
@@ -159,12 +171,18 @@ section{
 
 .products .btn{
     margin-top: 3rem;
-    background: orange;
+    background: #F1C43F;
     border:0;
     border-radius: 2px;
     text-transform: uppercase;
     padding: 1rem 2rem;
     font-size:1.6rem;
+    cursor:pointer;
+}
+
+.products .btn:hover{
+   background: orange;
+   transition:background 1s;
 }
 		
 
@@ -183,4 +201,63 @@ footer ul, span{
 footer li{
     font-size:1.3rem;
     margin:0 1rem;
+}
+
+@media (max-width:1000px){
+   #features .groupfeatures{
+      width:100%;
+   }
+}
+
+
+@media (max-width:650px){
+   #header{
+      height: 20vh;
+
+   }
+
+   #form{
+      margin-top: 130px;
+   }
+   
+   #nav-bar ul{
+      display: block;
+      text-align: center;
+   }
+
+   #nav-bar li{
+      padding: 0.3rem;
+   }
+
+}
+
+
+@media (max-width:600px){
+   #header{
+      display:block;
+      text-align: center;
+   }
+   #header #nav-bar{
+      width: 100%;
+      text-align: center;
+   }
+
+   
+}
+
+@media (max-width:550px){
+   
+   #features .features-content{
+      text-align: center;
+   }
+
+   #features .groupfeatures:nth-child(even){
+      margin-top: 75px;
+      margin-bottom: 75px;
+   }
+
+   #features i{
+      display: none;
+   }
+
 }
