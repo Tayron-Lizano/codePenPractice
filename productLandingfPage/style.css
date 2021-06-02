@@ -139,9 +139,12 @@ section{
 
 #pricing{
     display:flex;
+    justify-content: center;
 }
 
 .products{
+   height: 49vh;
+    max-width: 318px;
     text-align: center;
     flex:1;
     border: 1px solid;
@@ -227,6 +230,18 @@ footer li{
 
    #nav-bar li{
       padding: 0.3rem;
+   }
+
+}
+
+
+@media (max-width:800px){
+   #pricing {
+      display:block;
+   }
+
+   #pricing .products{
+      margin: 1rem auto;
    }
 
 }
