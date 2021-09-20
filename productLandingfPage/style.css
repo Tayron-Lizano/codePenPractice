@@ -143,7 +143,7 @@ section{
 }
 
 .products{
-   height: 49vh;
+   min-height: 49vh;
     max-width: 318px;
     text-align: center;
     flex:1;
@@ -215,7 +215,8 @@ footer li{
 
 @media (max-width:650px){
    #header{
-      height: 20vh;
+      height: 22vh;
+      align-items: center;
 
    }
 
